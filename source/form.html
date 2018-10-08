@@ -7,7 +7,7 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
       </a>
       <nav class="main-nav">
@@ -80,16 +80,16 @@
             <fieldset class="apps">
               <legend class="apps__title">С каким приложением путешествовали?</legend>
               <label for="ios" class="apps__label">Pink для iOS</label>
-              <input id="ios" class="apps__input" type="radio" name="ios" checked>
+              <input id="ios" class="apps__input" type="radio" name="app" checked>
               <label for="android" class="apps__label">Pink на Android</label>
-              <input id="android" class="apps__input" type="radio" name="android">
+              <input id="android" class="apps__input" type="radio" name="app">
               <label for="windows" class="apps__label">Windows Phone</label>
-              <input id="windows" class="apps__input" type="radio" name="windows">
+              <input id="windows" class="apps__input" type="radio" name="app">
             </fieldset>
           </li>
           <li class="story-form__item">
-            <p class="experience__title">Опишите свои эмоции</p>
-            <textarea class="experience__text" name="experience">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <label for="experience" class="experience__title">Опишите свои эмоции</label>
+            <textarea id="experience" class="experience__text" name="experience">Можно прям в красках, не стесняясь в выражениях</textarea>
           </li>
         </ul>
         <button class="btn btn--submit" type="submit">Отправить форму</button>
