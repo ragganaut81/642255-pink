@@ -11,7 +11,7 @@
         <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -40,11 +40,17 @@
         <h2 class="visually-hidden">Скачать приложение</h2>
 
         <a class="downloads__download-btn btn btn--download" href="https://itunes.apple.com">Скачать приложение</a>
-        <div class="downloads__apps">
-          <a class="downloads__app downloads__app--apple" href="https://itunes.apple.com">Apple</a>
-          <a class="downloads__app downloads__app--android" href="https://play.google.com">Android</a>
-          <a class="downloads__app downloads__app--windows" href="https://www.microsoft.com/store/">Windows</a>
-        </div>
+        <ul class="downloads__apps">
+          <li class="downloads__item">
+            <a class="downloads__app downloads__app--apple" href="https://itunes.apple.com">Apple</a>
+          </li>
+          <li class="downloads__item">
+            <a class="downloads__app downloads__app--android" href="https://play.google.com">Android</a>
+          </li>
+          <li class="downloads__item">
+            <a class="downloads__app downloads__app--windows" href="https://www.microsoft.com/store/">Windows</a>
+          </li>
+        </ul>
         <div class="downloads__description">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X,Windows 8
         </div>
@@ -73,7 +79,7 @@
         </ul>
       </section>
 
-      <section class="reviews">
+      <section class="reviews slider">
 
         <h2 class="visually-hidden">Отзывы</h2>
 
@@ -83,7 +89,25 @@
             <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </li>
+          <li class="reviews__item slider__item">
+            <h3 class="reviews__client-name">Николай Петров</h3>
+            <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+          </li>
+          <li class="reviews__item slider__item">
+            <h3 class="reviews__client-name">Николай Петров</h3>
+            <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+          </li>
         </ul>
+        <input class="visually-hidden" type="radio" id="review-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="review-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="review-3" name="toggle">
+        <div class="slider__controls">
+          <label class="slider__toggle slider__toggle--1" for="review-1">Первый</label>
+          <label class="slider__toggle slider__toggle--2" for="review-2">Второй</label>
+          <label class="slider__toggle slider__toggle--3" for="review-3">Третий</label>
+        </div>
       </section>
 
       <section class="prices">
@@ -92,16 +116,40 @@
 
         <ul class="prices__list slider__list">
           <li class="prices__item slider__item">
+            <h3 class="prices__title">Стандарт</h3>
+            <p class="prices__cost">3,99 USD</p>
+            <ul class="prices__services">
+              <li class="prices__item--on">Розовый фильтр</li>
+              <li class="prices__item--on">Смайлики</li>
+              <li class="prices__item--off">Комментарии</li>
+            </ul>
+          <li class="prices__item slider__item">
             <span class="most-popular">Хит</span>
             <h3 class="prices__title">Стандарт</h3>
             <p class="prices__cost">3,99 USD</p>
             <ul class="prices__services">
-              <li class="prices__services__item--on">Розовый фильтр</li>
-              <li class="prices__services__item--on">Смайлики</li>
-              <li class="prices__services__item--off">Комментарии</li>
+              <li class="prices__item--on">Розовый фильтр</li>
+              <li class="prices__item--on">Смайлики</li>
+              <li class="prices__item--off">Комментарии</li>
             </ul>
           </li>
+          <li class="prices__item slider__item">
+            <h3 class="prices__title">Стандарт</h3>
+            <p class="prices__cost">3,99 USD</p>
+            <ul class="prices__services">
+              <li class="prices__item--on">Розовый фильтр</li>
+              <li class="prices__item--on">Смайлики</li>
+              <li class="prices__item--off">Комментарии</li>
+            </ul>
         </ul>
+        <input class="visually-hidden" type="radio" id="price-1" name="toggle">
+        <input class="visually-hidden" type="radio" id="price-2" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="price-3" name="toggle">
+        <div class="slider__controls">
+          <label class="slider__toggle slider__toggle--1" for="price-1">Первый</label>
+          <label class="slider__toggle slider__toggle--2" for="price-2">Второй</label>
+          <label class="slider__toggle slider__toggle--3" for="price-3">Третий</label>
+        </div>
       </section>
 
     </main>
@@ -123,7 +171,7 @@
           </li>
           <li class="contacts__item">
             <p>Приезжайте в гости:</p>
-            <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+            <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
       </section>
