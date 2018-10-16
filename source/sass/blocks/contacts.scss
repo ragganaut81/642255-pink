@@ -1,0 +1,32 @@
+.contacts {
+  text-align: center;
+}
+
+.contacts__lead {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 45px;
+}
+
+.contacts__list {
+  @include reset-list;
+  margin-bottom: 40px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0 8px;
+}
+
+.contacts__tel,
+.contacts__email,
+.contacts__address {
+  color: $pink;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0 40px;
+  margin: 0;
+}

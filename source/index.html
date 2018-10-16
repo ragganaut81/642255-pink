@@ -40,30 +40,30 @@
     </header>
 
     <main class="page-main">
+      <header class="intro">
+        <h1 class="visually-hidden">Приложение для фотографий Pink</h1>
 
-      <h1 class="visually-hidden">Приложение для фотографий Pink</h1>
+        <section class="downloads">
 
-      <section class="downloads">
+          <h2 class="downloads__title">Взгляните на жинь иначе!</h2>
 
-        <h2 class="visually-hidden">Скачать приложение</h2>
-
-        <a class="downloads__download-btn btn btn--download" href="https://itunes.apple.com">Скачать приложение</a>
-        <ul class="downloads__apps">
-          <li class="downloads__item">
-            <a class="downloads__app downloads__app--apple" href="https://itunes.apple.com">Apple</a>
-          </li>
-          <li class="downloads__item">
-            <a class="downloads__app downloads__app--android" href="https://play.google.com">Android</a>
-          </li>
-          <li class="downloads__item">
-            <a class="downloads__app downloads__app--windows" href="https://www.microsoft.com/store/">Windows</a>
-          </li>
-        </ul>
-        <div class="downloads__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X,Windows 8
-        </div>
-
-      </section>
+          <a class="downloads__download-btn btn btn--download" href="https://itunes.apple.com">Скачать приложение</a>
+          <ul class="downloads__apps">
+            <li class="downloads__item">
+              <a class="downloads__app downloads__app--apple" href="https://itunes.apple.com">Apple</a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__app downloads__app--android" href="https://play.google.com">Android</a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__app downloads__app--windows" href="https://www.microsoft.com/store/">Windows</a>
+            </li>
+          </ul>
+          <div class="downloads__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X,Windows 8
+          </div>
+        </section>
+      </header>
 
       <section class="advantages">
 
@@ -127,17 +127,21 @@
         <input class="visually-hidden" type="radio" id="price-3" name="toggle">
         <ul class="prices__list slider__list">
           <li class="prices__item slider__item">
-            <h3 class="prices__title">Стандарт</h3>
-            <p class="prices__cost">3,99 USD</p>
+            <div class="prices__header">
+              <h3 class="prices__title">База</h3>
+              <p class="prices__cost">1,99 USD</p>
+            </div>
             <ul class="prices__services">
               <li class="prices__service prices__service--on">Розовый фильтр</li>
-              <li class="prices__service prices__service--on">Смайлики</li>
+              <li class="prices__service prices__service--off">Смайлики</li>
               <li class="prices__service prices__service--off">Комментарии</li>
             </ul>
           <li class="prices__item slider__item">
-            <span class="most-popular">Хит</span>
-            <h3 class="prices__title">Стандарт</h3>
-            <p class="prices__cost">3,99 USD</p>
+            <div class="prices__header">
+              <span class="most-popular">Хит</span>
+              <h3 class="prices__title">Стандарт</h3>
+              <p class="prices__cost">3,99 USD</p>
+            </div>
             <ul class="prices__services">
               <li class="prices__service prices__service--on">Розовый фильтр</li>
               <li class="prices__service prices__service--on">Смайлики</li>
@@ -145,12 +149,14 @@
             </ul>
           </li>
           <li class="prices__item slider__item">
-            <h3 class="prices__title">Стандарт</h3>
-            <p class="prices__cost">3,99 USD</p>
+            <div class="prices__header">
+              <h3 class="prices__title">Анлим</h3>
+              <p class="prices__cost">9,99 USD</p>
+            </div>
             <ul class="prices__services">
               <li class="prices__service prices__service--on">Розовый фильтр</li>
               <li class="prices__service prices__service--on">Смайлики</li>
-              <li class="prices__service prices__service--off">Комментарии</li>
+              <li class="prices__service prices__service--on">Комментарии</li>
             </ul>
         </ul>
         <div class="slider__controls">
@@ -171,15 +177,15 @@
         <p class="contacts__lead">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <p>Звоните:</p>
+            <p class="contacts__title">Звоните:</p>
             <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
-            <p>Пишите:</p>
+            <p class="contacts__title">Пишите:</p>
             <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
-            <p>Приезжайте в гости:</p>
+            <p class="contacts__title">Приезжайте в гости:</p>
             <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
