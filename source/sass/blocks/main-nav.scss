@@ -14,9 +14,11 @@
 }
 
 .main-nav__item {
+  position: relative;
   display: block;
   text-align: center;
   background-color: $blue-dark;
+  z-index: 2;
 }
 
 .main-nav__item a {
