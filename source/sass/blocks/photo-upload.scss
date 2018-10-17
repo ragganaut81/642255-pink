@@ -1,0 +1,15 @@
+.photo-upload__lead {
+  text-align: center;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.photo-upload__form {
+  background-color: $grey-light;
+  padding: 20px;
+}
+
+.photo-upload__tools {
+  @include reset-list;
+}

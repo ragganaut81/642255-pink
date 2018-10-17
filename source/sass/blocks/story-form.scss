@@ -1,0 +1,43 @@
+.story-form__list {
+  @include reset-list;
+}
+
+.story-form__item {
+  margin: 0 20px;
+}
+
+.story-form__label {
+  display: block;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $pink;
+  margin-left: 20px;
+  padding: 20px 0 10px;
+}
+
+.story-form__label--experience {
+  text-align: center;
+}
+
+.story-form__input {
+  display: block;
+  box-sizing: border-box;
+  padding:  14px 20px 15px;
+  width: 100%;
+  border: 2px solid $grey;
+  border-radius: 2px;
+  font-family: $font;
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-color;
+  outline: none;
+}
+
+.story-form__input--experience {
+
+}
+
+.story-form__item--fieldset {
+  margin: 40px 0 18px;
+  background-color: $grey-light;
+}

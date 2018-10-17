@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+}
+
+.copyright__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-left: 90px;
+  padding: 20px 0;
+}
+
+.copyright__academy {
+  width: 27px;
+  height: 34px;
+  margin-top: 25px;
+  margin-left: 12px;
+  fill: $pink;
+}

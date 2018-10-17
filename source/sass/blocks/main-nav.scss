@@ -1,0 +1,36 @@
+.main-nav__list {
+  padding: 0;
+  @include reset-list;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 19px;
+}
+
+.main-nav__wrapper {
+   width: 100%;
+}
+
+.main-nav__item {
+  position: relative;
+  display: block;
+  text-align: center;
+  background-color: $blue-dark;
+  z-index: 2;
+}
+
+.main-nav__item a {
+  display: block;
+  margin: 0;
+  background-color: $blue-dark;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 16px 20px;
+  box-shadow: 0 -1px 0 $black, inset 0 1px 0 rgba($white, 0.15);
+}

@@ -1,0 +1,20 @@
+.photo__title {
+  text-align: center;
+  color: $white;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0 20px 80px;
+}
+
+.photo__lead {
+  margin: 0;
+  padding: 50px 35px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.photo__posts-list {
+  @include reset-list;
+  margin: 0 20px;
+}
