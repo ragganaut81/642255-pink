@@ -1,6 +1,25 @@
+.main-nav {
+  @media (min-width: $desktops) {
+    margin-left: auto;
+    width: 760px;
+    padding-top: 34px;
+    padding-bottom: 36px;
+    flex-shrink: 1;
+  }
+}
+
 .main-nav__list {
   padding: 0;
   @include reset-list;
+
+  @media (min-width: $desktops) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: none;
+    justify-content: flex-end;
+  }
 }
 
 .main-nav__toggle {
@@ -17,8 +36,14 @@
   position: relative;
   display: block;
   text-align: center;
-  background-color: $blue-dark;
-  z-index: 2;
+
+  @media (min-width: $desktops) {
+    margin-left: 80px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+  }
 }
 
 .main-nav__item a {
@@ -33,4 +58,35 @@
   line-height: 32px;
   padding: 16px 20px;
   box-shadow: 0 -1px 0 $black, inset 0 1px 0 rgba($white, 0.15);
+
+  @media (min-width: $desktops) {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-transform: none;
+    line-height: 18px;
+    font-weight: 400;
+    padding: 11px 0;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 19px;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: $tablets) {
+    top: 44px;
+  }
+
+  @media (min-width: $desktops) {
+    display: none;
+  }
 }

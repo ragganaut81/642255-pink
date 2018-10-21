@@ -1,13 +1,47 @@
 .downloads {
+  width: 100%;
   padding-top: 28px;
   padding-bottom: 29px;
   color: $white;
   background-color: $blue-darkest;
   text-align: center;
+
+  @media (min-width: $tablets) {
+    padding: 90px 0;
+    width: 300px;
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktops) {
+    padding: 109px 0;
+  }
 }
 
 .downloads__title {
-  @include visually-hidden;
+  @media (max-width: $mobiles-max) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $tablets) {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 120px;
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .downloads__apps {
@@ -21,4 +55,14 @@
   padding-left: 40px;
   padding-right: 40px;
   font-weight: 300;
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 38px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 55px;
+  }
 }

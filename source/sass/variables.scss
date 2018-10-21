@@ -20,3 +20,10 @@ $link-color--hover: $black;
 $font: "Open Sans", "Arial", sans-serif;
 $font-size: 14px;
 $line-height: 24px;
+
+/*sizes and breakpoints*/
+$mobiles: 320px;
+$mobiles-max: 659px;
+$tablets: 660px;
+$tablets-max: 959px;
+$desktops: 960px;
