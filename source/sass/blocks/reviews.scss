@@ -1,8 +1,45 @@
+.reviews {
+  @media (min-width: $tablets) {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktops) {
+    width: 730px;
+  }
+}
+
 .reviews__list {
   text-align: center;
+}
+
+.reviews__client-name {
+  color: $black;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: $desktops) {
+    font-size: 24px;
+  }
+}
+
+.reviews__client-about {
+  @media (max-width: $mobiles-max) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $desktops) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .reviews__text {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: $tablets) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

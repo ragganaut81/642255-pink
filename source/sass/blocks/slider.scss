@@ -1,3 +1,11 @@
 .slider__list {
   @include reset-list;
 }
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: block;
+}

@@ -110,18 +110,21 @@
         <input class="visually-hidden" type="radio" id="review-2" name="toggle">
         <input class="visually-hidden" type="radio" id="review-3" name="toggle">
         <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
+          <li class="reviews__item slider__item slider__item--active">
             <h3 class="reviews__client-name">Николай Петров</h3>
+            <p class="reviews__client-about">25 лет, водитель трамвая</p>
             <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </li>
           <li class="reviews__item slider__item">
             <h3 class="reviews__client-name">Николай Петров</h3>
+            <p class="reviews__client-about">25 лет, водитель трамвая</p>
             <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </li>
           <li class="reviews__item slider__item">
             <h3 class="reviews__client-name">Николай Петров</h3>
+            <p class="reviews__client-about">25 лет, водитель трамвая</p>
             <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </li>
@@ -136,50 +139,52 @@
       <section class="prices slider">
 
         <h2 class="visually-hidden">Тарифы</h2>
-
-        <input class="visually-hidden" type="radio" id="price-1" name="toggle">
-        <input class="visually-hidden" type="radio" id="price-2" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="price-3" name="toggle">
-        <ul class="prices__list slider__list">
-          <li class="prices__item slider__item">
-            <div class="prices__header">
-              <h3 class="prices__title">База</h3>
-              <p class="prices__cost">1,99 USD</p>
-            </div>
-            <ul class="prices__services">
-              <li class="prices__service prices__service--on">Розовый фильтр</li>
-              <li class="prices__service prices__service--off">Смайлики</li>
-              <li class="prices__service prices__service--off">Комментарии</li>
-            </ul>
-          <li class="prices__item slider__item">
-            <div class="prices__header">
-              <span class="most-popular">Хит</span>
-              <h3 class="prices__title">Стандарт</h3>
-              <p class="prices__cost">3,99 USD</p>
-            </div>
-            <ul class="prices__services">
-              <li class="prices__service prices__service--on">Розовый фильтр</li>
-              <li class="prices__service prices__service--on">Смайлики</li>
-              <li class="prices__service prices__service--off">Комментарии</li>
-            </ul>
-          </li>
-          <li class="prices__item slider__item">
-            <div class="prices__header">
-              <h3 class="prices__title">Анлим</h3>
-              <p class="prices__cost">9,99 USD</p>
-            </div>
-            <ul class="prices__services">
-              <li class="prices__service prices__service--on">Розовый фильтр</li>
-              <li class="prices__service prices__service--on">Смайлики</li>
-              <li class="prices__service prices__service--on">Комментарии</li>
-            </ul>
-        </ul>
-        <div class="slider__controls">
-          <label class="slider__toggle slider__toggle--1" for="price-1">Первый</label>
-          <label class="slider__toggle slider__toggle--2" for="price-2">Второй</label>
-          <label class="slider__toggle slider__toggle--3" for="price-3">Третий</label>
+        <div class="prices__back">
+          <input class="visually-hidden" type="radio" id="price-1" name="toggle">
+          <input class="visually-hidden" type="radio" id="price-2" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="price-3" name="toggle">
+          <ul class="prices__list slider__list">
+            <li class="prices__item slider__item slider__item--active">
+              <div class="prices__header">
+                <h3 class="prices__title">База</h3>
+                <p class="prices__cost">1,99 USD</p>
+              </div>
+              <ul class="prices__services">
+                <li class="prices__service prices__service--on">Розовый фильтр</li>
+                <li class="prices__service prices__service--off">Смайлики</li>
+                <li class="prices__service prices__service--off">Комментарии</li>
+              </ul>
+            </li>
+            <li class="prices__item slider__item">
+              <div class="prices__header">
+                <span class="most-popular">Хит</span>
+                <h3 class="prices__title">Стандарт</h3>
+                <p class="prices__cost">3,99 USD</p>
+              </div>
+              <ul class="prices__services">
+                <li class="prices__service prices__service--on">Розовый фильтр</li>
+                <li class="prices__service prices__service--on">Смайлики</li>
+                <li class="prices__service prices__service--off">Комментарии</li>
+              </ul>
+            </li>
+            <li class="prices__item slider__item">
+              <div class="prices__header">
+                <h3 class="prices__title">Анлим</h3>
+                <p class="prices__cost">9,99 USD</p>
+              </div>
+              <ul class="prices__services">
+                <li class="prices__service prices__service--on">Розовый фильтр</li>
+                <li class="prices__service prices__service--on">Смайлики</li>
+                <li class="prices__service prices__service--on">Комментарии</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="slider__controls">
+            <label class="slider__toggle slider__toggle--1" for="price-1">Первый</label>
+            <label class="slider__toggle slider__toggle--2" for="price-2">Второй</label>
+            <label class="slider__toggle slider__toggle--3" for="price-3">Третий</label>
+          </div>
         </div>
-
       </section>
 
     </main>
@@ -210,7 +215,7 @@
 
         <h2 class="visually-hidden">Карта</h2>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.320894616143416!3d59.93879418187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530198442525" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.477074912165!2d30.32248118384132!3d59.93842911414305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1540630558655" allowfullscreen></iframe>
       </section>
     </footer>
 

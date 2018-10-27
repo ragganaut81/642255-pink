@@ -8,11 +8,34 @@
   font-weight: 300;
   margin: 0;
   padding-top: 45px;
+
+  @media (min-width: $tablets) {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    width: 380px;
+    margin: 0 auto;
+  }
 }
 
 .contacts__list {
   @include reset-list;
   margin-bottom: 40px;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktops) {
+    margin: 0 100px;
+  }
+}
+
+.contacts__item {
+  width: 330px;
+  margin-top: 20px;
 }
 
 .contacts__title {
