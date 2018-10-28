@@ -1,3 +1,18 @@
+.page-footer {
+  &--index {
+    @media (max-width: $mobiles-max) {
+      @include visually-hidden;
+    }
+  }
+
+  @media (min-width: $tablets) {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .page-footer__logo img {
   margin: 40px auto;
 }

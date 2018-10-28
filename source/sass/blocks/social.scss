@@ -1,8 +1,18 @@
+.social {
+  @media (min-width: $tablets) {
+    width: 200px;
+  }
+}
+
 .social__list {
   @include reset-list;
   display: flex;
   justify-content: space-around;
   margin: 0 40px;
+
+  @media (min-width: $tablets) {
+
+  }
 }
 
 .social__item {
